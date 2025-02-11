@@ -29,13 +29,12 @@ jobs:
         
       - name: Build
         run: npm run build
-        env:
-          BASE_URL: /Coconut/
         
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: dist
+          retention-days: 1
 
   deploy:
     environment:
