@@ -7,8 +7,6 @@ interface NavMenuProps {
 }
 
 export const NavMenu = ({ className }: NavMenuProps) => {
-  const navigate = useNavigate();
-
   return (
     <nav className={cn("fixed top-0 left-0 right-0 z-50 bg-[#0D1117]/80 backdrop-blur-md", className)}>
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
